@@ -1,0 +1,41 @@
+.grid__container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 95%;
+  margin: auto;
+  flex-wrap: wrap;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.image__button {
+  position: relative;
+  cursor: pointer;
+  height: 77%;
+  width: 97%;
+  margin: auto;
+}
+.image__button > img {
+  position: absolute;
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background-position: bottom;
+  filter: brightness(50%);
+  transition: 0.4s ease;
+  border-radius: 4px;
+}
+.image__button > img:hover {
+  filter: brightness(70%);
+  transition: 0.4s ease;
+}
+.image__button > h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #ffff;
+}

@@ -1,0 +1,41 @@
+.landing_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.screen_image {
+  top: 0;
+  width: 100%;
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+  min-height: 650px;
+  height: 100vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 700px) {
+  .screen_image {
+    height: 110vh;
+  }
+}
+.vector1 {
+  position: absolute;
+  top: 30%;
+  z-index: -1;
+  width: 30%;
+}
+.vector2 {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 30%;
+}
+.vector3 {
+  position: absolute;
+  z-index: -1;
+  width: 20%;
+  margin-top: 70%;
+  left: 0;
+  transform: rotate(180deg);
+}
