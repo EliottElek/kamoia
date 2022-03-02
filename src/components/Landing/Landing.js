@@ -6,12 +6,13 @@ import Products from "../Products/Products";
 import About from "../About/About";
 import ContactForm from "../Contact/Contact";
 import Carousel from "../Carousel/Carousel";
-import juniorData from "../data/junior";
+import news from "../data/news";
 import { CarouselItem } from "../Carousel/Carousel";
 import { useNavigate } from "react-router";
 //junior, senior, fun surf, racing surf
 const text = "Exceed the limit.";
 const caption = "Performance, exception, elegance, durability.";
+const only4First = news.slice(0, 4);
 const Landing = () => {
   const navigate = useNavigate();
   return (
@@ -19,7 +20,7 @@ const Landing = () => {
       <Hero text={text} caption={caption} />
       {/* <img className="screen_image" src={screen} alt="screen" /> */}
       <MenWomen />
-      <Products products={juniorData} />
+      <Products products={only4First} newProduct />
       <Carousel>
         <CarouselItem>
           <div
@@ -127,6 +128,51 @@ const Landing = () => {
             <img
               alt="img"
               src="https://cdn.pixabay.com/photo/2014/10/22/18/04/man-498473_1280.jpg"
+              style={{
+                position: "absolute",
+                zIndex: 0,
+                top: 0,
+                left: 0,
+                height: "100%",
+                width: "100%",
+                objectFit: "cover",
+                filter: "brightness(60%)",
+                objectPosition: "center",
+              }}
+            />
+            <div
+              style={{
+                zIndex: 1,
+                display: "flex",
+                flexDirection: "column",
+                gap: "20px",
+              }}
+            >
+              <button
+                className="type2_button"
+                onClick={() => navigate("/products#free")}
+              >
+                See free surf
+              </button>
+            </div>
+          </div>
+        </CarouselItem>
+        <CarouselItem>
+          <div
+            style={{
+              display: "flex",
+              position: "relative",
+              height: "100%",
+              width: "100%",
+              justifyContent: "space-around",
+              alignItems: "center",
+              color: "black",
+              zIndex: "1!important",
+            }}
+          >
+            <img
+              alt="img"
+              src="https://www.blizzard-tecnica.com/storage/ProductCategory/c882eee756526f6e5e402a93046a3791.jpg"
               style={{
                 position: "absolute",
                 zIndex: 0,

@@ -7,6 +7,7 @@ import fun from "../data/fun";
 import racing from "../data/racing";
 import senior from "../data/senior";
 import news from "../data/news";
+import free from "../data/free";
 
 const ProductsPage = () => {
   return (
@@ -16,6 +17,10 @@ const ProductsPage = () => {
         2024 upcomming !
       </h2>
       <Products products={news} newProduct />
+      <h2 id="free" style={{ marginLeft: "100px" }}>
+        Free surf
+      </h2>
+      <Products products={free} />
       <h2 id="racing" style={{ marginLeft: "100px" }}>
         Racing surf
       </h2>
