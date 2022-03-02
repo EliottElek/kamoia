@@ -26,7 +26,7 @@ const newData = [
   {
     name: "Model senior 5",
     price: "799$",
-    description: "Best skis ever, for senior.",
+    description: "Best quality on the market. Period",
     url: "https://www.salomon.com/fr-fr/shop-emea/media/catalog/product/l/4/l41493800_yigwteqjf0zdhaco.jpg?dpr=3&fit=cover&orient=1&quality=80&optimize=high&format=pjpg&auto=webp&width=650",
   },
   {

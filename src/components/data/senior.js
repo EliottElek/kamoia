@@ -32,7 +32,7 @@ const seniorData = [
   {
     name: "Model skis 6",
     price: "799$",
-    description: "Best surf ever, for senior.",
+    description: "Best skis ever, for senior.",
     url: "https://www.salomon.com/fr-fr/shop-emea/media/catalog/product/L/4/L41494400_8440029481051c3c340db1c6f95fff0b.jpg?dpr=3&fit=cover&orient=1&quality=80&optimize=high&format=pjpg&auto=webp&width=650",
   },
 ];
