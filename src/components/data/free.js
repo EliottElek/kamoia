@@ -30,7 +30,7 @@ const freeData = [
     url: "https://www.salomon.com/fr-fr/shop-emea/media/catalog/product/l/4/l41493800_yigwteqjf0zdhaco.jpg?dpr=3&fit=cover&orient=1&quality=80&optimize=high&format=pjpg&auto=webp&width=650",
   },
   {
-    name: "Model skis 6",
+    name: "Model free skis 6",
     price: "670$",
     description: "Best skis ever, for free surfer.",
     url: "https://www.salomon.com/fr-fr/shop-emea/media/catalog/product/L/4/L41494400_8440029481051c3c340db1c6f95fff0b.jpg?dpr=3&fit=cover&orient=1&quality=80&optimize=high&format=pjpg&auto=webp&width=650",

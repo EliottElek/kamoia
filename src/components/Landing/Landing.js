@@ -6,13 +6,13 @@ import Products from "../Products/Products";
 import About from "../About/About";
 import ContactForm from "../Contact/Contact";
 import Carousel from "../Carousel/Carousel";
-import news from "../data/news";
+import free from "../data/free";
 import { CarouselItem } from "../Carousel/Carousel";
 import { useNavigate } from "react-router";
 //junior, senior, fun surf, racing surf
 const text = "Exceed the limit.";
 const caption = "Performance, exception, elegance, durability.";
-const only4First = news.slice(0, 4);
+const only4First = free.slice(0, 4);
 const Landing = () => {
   const navigate = useNavigate();
   return (
