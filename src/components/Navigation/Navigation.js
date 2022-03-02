@@ -29,7 +29,7 @@ const Navigation = ({ links, logo, size }) => {
         id={"navbtn"}
         className="type2_button"
       >
-        Products
+        2024 News !
       </button>
     </div>
   );
@@ -51,7 +51,7 @@ const Navigation = ({ links, logo, size }) => {
           id={"navbtn"}
           className="type2_button"
         >
-          Products
+          2024 News !
         </button>
         <HamburgerIcon open={open} setOpen={setOpen} />
       </nav>

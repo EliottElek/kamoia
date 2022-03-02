@@ -10,12 +10,17 @@ const Hero = ({ text, caption }) => {
         <h5>{caption}</h5>
         <div className="hero_button_container">
           <button
-            onClick={() => navigate("/products")}
+            onClick={() => navigate("/products/#senior")}
             className="type1_button"
           >
             See products
           </button>
-          <button className="type2_button">Contact our experts</button>
+          <button
+            className="type2_button"
+            onClick={() => navigate("/products")}
+          >
+            View our 2024 new products !
+          </button>
         </div>
       </div>
     </div>

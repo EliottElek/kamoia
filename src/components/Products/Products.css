@@ -5,10 +5,20 @@
   margin: auto;
 }
 .products__grid__item {
+  position: relative;
   height: auto;
   padding: 10px;
   cursor: pointer;
   transition: 0.3s ease-in;
+}
+.new__product {
+  height: 50px;
+  top: 0;
+  display: grid;
+  place-items: center;
+  color : #ffff;
+  font-weight: 900;
+  background-color: rgba(255, 99, 71, 0.404);
 }
 .products__grid__item:hover {
   transition: 0.3s ease-out;
@@ -42,4 +52,9 @@
   .products__grid {
     grid-template-columns: 100%;
   }
+}
+#news {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: rgba(235, 37, 2, 0.89)
 }

@@ -3,13 +3,14 @@ import "./Products.css";
 import Modal from "../Modal/Modal";
 import InputText from "../InputText/InputText";
 
-const Product = ({ product }) => {
+const Product = ({ product, newProduct }) => {
   const [open, setOpen] = React.useState(false);
   const [email, setEmail] = React.useState("");
 
   return (
     <>
       <div className="products__grid__item" onClick={() => setOpen(true)}>
+        {newProduct && <div className="new__product">Upcommig in 2024.</div>}
         <img src={product.url} alt="pic" />
         <h3>{product.name}</h3>
         <h4>{product.description} Preorder soon.</h4>
@@ -32,11 +33,13 @@ const Product = ({ product }) => {
           <p>You can leave your e-mail so that we can keep you in touch.</p>
           <div
             style={{
+              gap: "10px",
               display: "flex",
               padding: "18px",
               flexDirection: "row",
               alignItems: "baseline",
               justifyContent: "center",
+              flexWrap: "wrap",
             }}
           >
             <InputText
@@ -45,8 +48,8 @@ const Product = ({ product }) => {
               onChange={(e) => setEmail(e.target.value)}
             />
             <button
+              style={{ width: "120px" }}
               onClick={() => setOpen(false)}
-              id={"navbtn"}
               className="type1_button"
             >
               Send

@@ -7,6 +7,7 @@ import "./App.css";
 import ProductsPage from "./components/Products/ProductsPage";
 import AboutPage from "./components/About/AboutPage";
 import ContactPage from "./components/Contact/ContactPage";
+import Footer from "./components/Footer/Footer";
 const links = [
   {
     label: "Home",
@@ -46,6 +47,7 @@ function App() {
           <Route exact path="/about" element={<AboutPage />} />
           <Route exact path="/contact" element={<ContactPage />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
