@@ -4,6 +4,9 @@ import Landing from "./components/Landing/Landing";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import logo from "./assets/images/logo.png";
 import "./App.css";
+import ProductsPage from "./components/Products/ProductsPage";
+import AboutPage from "./components/About/AboutPage";
+import ContactPage from "./components/Contact/ContactPage";
 const links = [
   {
     label: "Home",
@@ -39,7 +42,9 @@ function App() {
         <Navigation size={size} links={links} logo={logo} />
         <Routes>
           <Route exact path="/" element={<Landing />} />
-          <Route path="*" element={<h1>404 error</h1>} />
+          <Route exact path="/products" element={<ProductsPage />} />
+          <Route exact path="/about" element={<AboutPage />} />
+          <Route exact path="/contact" element={<ContactPage />} />
         </Routes>
       </Router>
     </div>

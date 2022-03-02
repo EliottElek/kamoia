@@ -23,14 +23,14 @@
 }
 .links_list li a {
   font-size: 1.1rem;
-  color: var(--main-text-color);
+  color: #fefefe;
   text-decoration: none;
   transition: 0.3s ease-in;
   border-bottom: solid 2px transparent;
   padding: 6px;
 }
 .links_list li a:hover {
-  color: var(--main-text-color);
+  color: #fefefe;
   border-bottom: solid 2px var(--main-color);
   transition: 0.3s ease-out;
 }
@@ -68,7 +68,7 @@
 }
 .mobile_links_list li a {
   font-size: 1.1rem;
-  color: var(--main-color);
+  color: #fefefe;
   text-decoration: none;
   transition: 0.3s ease-in;
   border-bottom: solid 2px transparent;

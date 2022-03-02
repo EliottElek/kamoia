@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import "./MenWomen.css";
 const Men = () => {
+  const navigate = useNavigate();
   return (
-    <div className="image__button">
+    <div onClick={() => navigate("/products")} className="image__button">
       <img
         alt="pic"
         src={

@@ -10,10 +10,10 @@
 }
 .login_button {
   padding: 0px 12px 0px 12px;
-  height: 52px;
+  height: 48px;
   background: transparent;
   border: solid 1px var(--main-color);
-  border-radius: 85px;
+  border-radius: 15px;
   color: var(--main-color);
   font-size: 1rem;
   cursor: pointer;
@@ -22,21 +22,21 @@
 .type1_button {
   margin: 15px;
   padding: 0px 12px 0px 12px;
-  height: 52px;
+  height: 48px;
   background: var(--main-color);
   border: solid 1px var(--main-color);
   color: #fefefe;
-  border-radius: 85px;
+  border-radius: 15px;
   font-size: 1rem;
   cursor: pointer;
 }
 .type2_button {
   margin: 15px;
   padding: 0px 12px 0px 12px;
-  height: 52px;
+  height: 48px;
   background: #fefefe;
   border: solid 1px #fefefe;
-  border-radius: 85px;
+  border-radius: 15px;
   color: var(--main-color);
   font-size: 1rem;
   cursor: pointer;

@@ -4,6 +4,7 @@ import "./Landing.css";
 import MenWomen from "../MenWomen/MenWomen";
 import Products from "../Products/Products";
 import About from "../About/About";
+import ContactForm from "../Contact/Contact";
 
 const text = "Exceed the limit.";
 const caption = "Performance, exception, elegance, durability.";
@@ -15,6 +16,7 @@ const Landing = () => {
       <MenWomen />
       <Products />
       <About />
+      <ContactForm />
     </div>
   );
 };

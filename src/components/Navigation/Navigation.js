@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import HamburgerIcon from "./HambugerIcon/HamburgerIcon";
 import "./Navigation.css";
 const Navigation = ({ links, logo, size }) => {
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
   React.useEffect(() => {
     if (size.x >= 700) setOpen(false);
   }, [size.x, setOpen]);
@@ -23,7 +24,11 @@ const Navigation = ({ links, logo, size }) => {
           </li>
         ))}
       </ul>
-      <button id={"navbtn"} className="type2_button">
+      <button
+        onClick={() => navigate("/products")}
+        id={"navbtn"}
+        className="type2_button"
+      >
         Products
       </button>
     </div>
@@ -41,7 +46,13 @@ const Navigation = ({ links, logo, size }) => {
             </li>
           ))}
         </ul>
-        <button className="type2_button">Products</button>
+        <button
+          onClick={() => navigate("/products")}
+          id={"navbtn"}
+          className="type2_button"
+        >
+          Products
+        </button>
         <HamburgerIcon open={open} setOpen={setOpen} />
       </nav>
       <MobileNavigation />
